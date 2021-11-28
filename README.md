@@ -57,10 +57,10 @@ We are a group of research from the Universitat Politècnica de Catalunya (UPC) 
 - *Allisson Dantas de Oliveira, Project "Imaging"  Universitat Politècnica de Catalunya, Vall d'Hebron Research Institute (VHIR) i Fundació PROBITAS.*
 
 **PhD Students**
-- *Eduardo Moreno, Computer modeling of the polarity and amoeboid motion of living cells. Universitat Politècnica de Catalunya.
-- *Martí Català, Computer modeling of tuberculosis lesions dynamics. Universitat Politècnica de Catalunya.
-- *Gustavo Montes: Uncertainty Quantificarion and Stochastic Variables for Models of Cardiac Myocytes One year visiting from the Universidad Federal de Juiz de Fora (Brazil).
-- *David Conesa: Development of generalized models to analyze human atrial behavior. Universitat Politècnica de Catalunya.
+- *Eduardo Moreno, Computer modeling of the polarity and amoeboid motion of living cells. Universitat Politècnica de Catalunya.*
+- *Martí Català, Computer modeling of tuberculosis lesions dynamics. Universitat Politècnica de Catalunya.*
+- *Gustavo Montes: Uncertainty Quantificarion and Stochastic Variables for Models of Cardiac Myocytes One year visiting from the Universidad Federal de Juiz de Fora (Brazil).*
+- *David Conesa: Development of generalized models to analyze human atrial behavior. Universitat Politècnica de Catalunya.*
 - *Aida Perramon: SARS-CoV-2 and other respiratory viruses in childhood: different approaches to define predictive models for their diagnosis and epidemiological evolution.        Universitat Politècnica de Catalunya.*
 
 **Master Students**
@@ -71,7 +71,7 @@ We are a group of research from the Universitat Politècnica de Catalunya (UPC) 
 - *M. Cayetana López Cano Integration of Covid19 data bases for visualization and prediction based  in AI algorithms (BSc in Data Science and Engineering, 2021).*
 
 **Internship Students**
-- *Inmaculada Baxarias: Analysis and prediction of COVID-19 for EU-EFTA-UK and other countries (Physics Engineering, 2021) (Research support staff)
-- *Marta Alcalde Analysis and prediction of COVID-19 for EU-EFTA-UK and other countries  (Physics Engineering, 2021) (Learning Scholarship) 
-- *Núria Mercadé Analysis and prediction of COVID-19 for EU-EFTA-UK and other countries (Physics Engineering, 2021) (Learning Scholarship) 
+- *Inmaculada Baxarias: Analysis and prediction of COVID-19 for EU-EFTA-UK and other countries (Physics Engineering, 2021) (Research support staff)*
+- *Marta Alcalde Analysis and prediction of COVID-19 for EU-EFTA-UK and other countries  (Physics Engineering, 2021) (Learning Scholarship)*
+- *Núria Mercadé Analysis and prediction of COVID-19 for EU-EFTA-UK and other countries (Physics Engineering, 2021) (Learning Scholarship)* 
 - *Ann-Kathrin von Mickwitz: Analysis of X-Ray scattering images from three-dimensional cardiac infarcted myocardial tissue (DAAD fellowship. Mathematics 2021, University of Bremen)*
