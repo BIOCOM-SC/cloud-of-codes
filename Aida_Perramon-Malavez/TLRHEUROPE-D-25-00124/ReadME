@@ -1,1 +1,8 @@
-
+In this folder you will find different files:
+- Figures.ipnyb: Python notebook to build the figures and preprocess the data
+- Regression.R: R file to compute the poisson model to calculate RR 
+- Synth_controls.R: R file to compute the synthetic control approach
+- population_data.xlsx: Data gathered on the population for the different regions (not accurate)
+- dades.xlsx: Data we used for the analyses
+- admissionsED.xlsx: Data only for admissions from ED, used for the R codes
+- attendancesED.xlsx: Data only for attendances at ED, used for the R codes
