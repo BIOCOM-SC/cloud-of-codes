@@ -15,8 +15,8 @@ suppressWarnings({
   library(sandwich)
 })
 
-# data <- read_excel("admissionsED.xlsx")
-data <- read_excel("attendancesED.xlsx")
+data <- read_excel("admissionsED.xlsx")
+# data <- read_excel("attendancesED.xlsx")
 
 # Transform the data of total admissions to fit the Poisson model condition
 data <- data %>%
@@ -59,9 +59,13 @@ data <- data %>%
 # data_combined <- data_combined %>%
 #   mutate(season_fac = relevel(season_fac, ref = "average"))
 
-# Making 2023-2024 the reference value
+# Filtering 2020-2021 to not interfer with analyses and establish pre-nirse and 
+# nirse seasons
 data <- data %>%
-  mutate(season_fac = relevel(season_fac, ref = "2023-2024"))
+  filter(Season != "2020-2021") %>%  # Exclude 2020-2021 season
+  mutate(season_fac = ifelse(Season == "2023-2024", "2023-2024", "pre-nirse"),
+         season_fac = as.factor(season_fac), 
+         season_fac = relevel(season_fac, ref = "pre-nirse"))
 
 # Making  12-23m the reference value 
 data <- data %>%

@@ -46,7 +46,11 @@ df_under6m <- data %>%
     treated = ifelse(Place == "Catalonia" & Season == "2023-2024", 1, 0),
     inc_bronchiolitis = 1e5* bronchiolitis / pop_denominators[Place],
     inc_all_diag = 1e5* all_diagnoses / pop_denominators[Place],
-    inc_RVI = 1e5* RVI / pop_denominators[Place]
+    inc_RVI = 1e5* RVI / pop_denominators[Place],
+    
+    inc_bronchiolitis_scaled = inc_bronchiolitis / mean(inc_bronchiolitis, na.rm = TRUE),
+    inc_all_diag_scaled = inc_all_diag / mean(inc_all_diag, na.rm = TRUE),
+    inc_RVI_scaled = inc_RVI / mean(inc_RVI, na.rm = TRUE)
   )
 
 # We need time and Place as numeric for synth, and data to be dataframe
@@ -128,9 +132,9 @@ print(paste("Difference between synthetic and observed in Catalonia 2023 (<6m): 
 
 dataprep_out2 <- dataprep(
   foo = df_under6m,
-  predictors = c("inc_bronchiolitis", "inc_all_diag", "inc_RVI"),          
-  predictors.op = "sum", # this could be "mean", "median", "sd", "sum"...          
-  dependent = "inc_bronchiolitis",               
+  predictors = c("inc_bronchiolitis_scaled", "inc_all_diag_scaled", "inc_RVI_scaled"),          
+  predictors.op = "mean", # this could be "mean", "median", "sd", "sum"...          
+  dependent = "inc_bronchiolitis_scaled",               
   unit.variable = "PlaceID",          
   time.variable = "SeasonID",
   treatment.identifier = unique(df_under6m$PlaceID[df_under6m$Place == "Catalonia"]),
@@ -166,15 +170,11 @@ scm_data2[,Synthetic_scaled:= Synthetic*diff2]
 
 ggplot(scm_data2, aes(x = Season)) +
   geom_line(aes(y = Observed, color = "Observed"), size = 1) +
-  geom_line(aes(y = Synthetic, color = "Synthetic"), size = 1, linetype = "dashed") +  
-  geom_line(aes(y = Synthetic_scaled, color = "Synthetic (Scaled)"), size = 1, linetype = "dashed") +
+  geom_line(aes(y = Synthetic, color = "Synthetic"), size = 1) +  
   labs(y = "Bronchiolitis attendances at ED per 100,000 inh. (<6m)", 
-       x = "Season", 
-       title = "Estimated incidence of bronchiolitis diagnoses in Catalonia using synthetic controls (<6m)") +
-  scale_color_manual(values = c("Observed" = "blue","Synthetic" = "green", "Synthetic (Scaled)" = "red")) + 
+       x = "Season") +
+  scale_color_manual(values = c("Observed" = "black","Synthetic" = "green")) + 
   theme_minimal() +
   theme(legend.title = element_blank(), 
         legend.position = "top")
 
-print(paste("Difference between synthetic and observed in Catalonia 2023 (<6m): ", 
-            round(scm_data2[Season == 2023, Synthetic_scaled] - scm_data2[Season == 2023, Observed])))
