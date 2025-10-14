@@ -1,13 +1,6 @@
 # cloud-of-codes
 
 ## Cloud of codes of the BIOCOM-SC group.
-For information about COVID-19 check: https://biocomsc.upc.edu/en/covid-19
-
-## INDEX
--
--
--
--
 
 ## Research & Members
 We are a group of research from the Universitat Politècnica de Catalunya (UPC) that study diverse biological processes, e.g. from molecular level (ion channel function) to cell (motion, contraction), organ (heart beating) and population level (microbial proliferation, epidemiology). For that, we use different methods and perspectives with the goal of developing clinical applications for biomedicine and environmental applications for bioengineering.
@@ -55,13 +48,14 @@ We are a group of research from the Universitat Politècnica de Catalunya (UPC) 
   
 **Postdoctoral researchers**
 - *Allisson Dantas de Oliveira, Project "Imaging"  Universitat Politècnica de Catalunya, Vall d'Hebron Research Institute (VHIR) i Fundació PROBITAS.*
+- *Martí Català, Computer modeling of tuberculosis lesions dynamics. University of Oxford.*
+- *Aida Perramon: SARS-CoV-2 and other respiratory viruses in childhood: different approaches to define predictive models for their diagnosis and epidemiological evolution. SISAP.*
 
 **PhD Students**
 - *Eduardo Moreno, Computer modeling of the polarity and amoeboid motion of living cells. Universitat Politècnica de Catalunya.*
-- *Martí Català, Computer modeling of tuberculosis lesions dynamics. Universitat Politècnica de Catalunya.*
+- *Fernando Muñoz,  Computer modeling of tuberculosis lesions dynamics. Universitat Politècnica de Catalunya.*
 - *Gustavo Montes: Uncertainty Quantificarion and Stochastic Variables for Models of Cardiac Myocytes One year visiting from the Universidad Federal de Juiz de Fora (Brazil).*
 - *David Conesa: Development of generalized models to analyze human atrial behavior. Universitat Politècnica de Catalunya.*
-- *Aida Perramon: SARS-CoV-2 and other respiratory viruses in childhood: different approaches to define predictive models for their diagnosis and epidemiological evolution.        Universitat Politècnica de Catalunya.*
 
 **Master Students**
 
