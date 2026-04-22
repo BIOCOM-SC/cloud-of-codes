@@ -1,0 +1,25 @@
+coliny_direct/NO_METHOD_ID/1/"Best Continuous Variables"
+  Array Spans: "Best Sets"
+  Row Labels: "v0" "fvimm" "r0" "b" "nata" "tc" "n0"
+  Data (vector<vector<double>>):
+      Array Entry 1:
+                      6.9828814487e-01
+                      2.0555555556e-01
+                      5.8209876543e+00
+                      1.0250000000e-01
+                      2.4187242798e-01
+                      3.3327160494e+01
+                      2.0055555556e+01
+coliny_direct/NO_METHOD_ID/1/"Best Functions"
+  Array Spans: "Best Sets"
+  Row Labels: "ERROR_TOT"
+  Data (vector<vector<double>>):
+      Array Entry 1:
+                      2.9579120000e+00
+coliny_direct/NO_METHOD_ID/1/"Continuous Variable Labels"
+  Data (vector<string>):
+      "v0" "fvimm" "r0" "b" "nata" "tc" "n0"
+coliny_direct/NO_METHOD_ID/1/"Function Labels"
+  Data (vector<string>):
+      "ERROR_TOT"
+
